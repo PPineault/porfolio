@@ -1,15 +1,15 @@
-// Sélectionner tous les éléments video
+//mediaelement
 const videoElements = document.querySelectorAll("video");
 
 // Itérer sur chaque élément video
 videoElements.forEach((videoElement, index) => {
   // Créer une instance MediaElementPlayer pour chaque vidéo
   const playerCaptions = new MediaElementPlayer(videoElement, {
-    iconSprite: "node_modules/mediaelement/src/css/mejs-controls.svg",
     // Définir une miniature différente pour chaque vidéo
     poster: `./images/video-thumbnail-${index + 1}.png`,
   });
 });
+
 //gestion du smooth et faire fonctionner lien avec id surtout pour mobile
 window.addEventListener("load", function () {
   function scrollToAnchor(aid) {
