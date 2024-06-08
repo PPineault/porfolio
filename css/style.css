@@ -14,8 +14,7 @@
 }
 
 body {
-  font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052,
-    Sylfaen, serif;
+  font-family: system-ui, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -171,6 +170,9 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.center {
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   header img {
@@ -272,22 +274,30 @@ footer {
     font-size: 12px;
   }
 }
+.compdevweb h3 {
+  margin-top: 60px;
+}
 
 @media (min-width: 1200px) {
   .language {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1px 0px;
-    grid-template-areas: ". . . . .";
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px; /* Augmente l'espacement entre les éléments */
   }
+
+  .language img {
+    margin: 0;
+    padding: 0;
+  }
+
   .bd {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1px 0px;
-    grid-template-areas: ". . ";
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px; /* Augmente l'espacement entre les éléments */
+  }
+
+  .bd img {
+    margin: 0;
+    padding: 0;
   }
 }
