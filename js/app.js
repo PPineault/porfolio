@@ -1,3 +1,30 @@
+//mode clair
+/*
+document.addEventListener("DOMContentLoaded", function () {
+  const themeBtn = document.getElementById("theme-btn");
+  const themeIcon = document.getElementById("theme-icon");
+  const body = document.body;
+
+  // Initialiser le thème en fonction de l'attribut data-theme
+  body.classList.add(body.dataset.theme + "-theme");
+
+  function toggleTheme() {
+    body.classList.toggle("light-theme");
+    body.classList.toggle("dark-theme");
+    if (body.classList.contains("dark-theme")) {
+      body.dataset.theme = "dark";
+      themeBtn.textContent = "☀️";
+    } else {
+      body.dataset.theme = "light";
+
+      themeBtn.textContent = "🌙 ";
+    }
+  }
+
+  themeBtn.addEventListener("click", toggleTheme);
+});
+*/
+
 //hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");

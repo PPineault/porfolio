@@ -18,6 +18,22 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+.light-theme {
+  --main-color: #ec6261;
+  --secondary-color: #ffffff;
+  --third-color: #4a4a4a;
+  --background-color: #f2f2f2;
+  --text-color: #333333;
+  --header-color: #555555;
+}
+
+#theme-btn {
+  font-size: 16px;
+}
+
+.fas {
+  margin-right: 5px;
+}
 
 #backToTopBtn {
   display: none;
@@ -73,7 +89,11 @@ nav a {
   padding: 10px;
   margin: 0 10px;
 }
-
+h1 span {
+  display: block;
+  margin-bottom: 20px;
+  padding: 40px;
+}
 nav a:hover {
   background-color: var(--main-color);
 }
