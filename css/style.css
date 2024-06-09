@@ -118,10 +118,7 @@ section {
   margin-bottom: 40px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
   color: var(--main-color);
   margin-bottom: 10px;
   text-align: center;
@@ -256,6 +253,61 @@ footer {
   background-color: var(--main-color);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1,
+header h1 span,
+header img {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+header h1.animate-in,
+header h1 span.animate-in,
+header img.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2,
+h3,
+h4 {
+  color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  transition: text-align 2s ease-out;
+}
+
+@media (hover: hover) {
+  h2:hover,
+  h3:hover,
+  h4:hover {
+    text-align: center;
+  }
+}
+
+@media (hover: none) {
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   header img {
     max-width: 90%;
@@ -279,6 +331,13 @@ footer {
   ol {
     margin-left: 15px;
   }
+}
+h2::after {
+  animation-delay: 0.5s;
+}
+
+h3::after {
+  animation-delay: 1s;
 }
 
 @media (max-width: 480px) {
