@@ -1,8 +1,6 @@
-//mode clair
-/*
+//mode clair/sombre
 document.addEventListener("DOMContentLoaded", function () {
   const themeBtn = document.getElementById("theme-btn");
-  const themeIcon = document.getElementById("theme-icon");
   const body = document.body;
 
   // Initialiser le thème en fonction de l'attribut data-theme
@@ -11,19 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleTheme() {
     body.classList.toggle("light-theme");
     body.classList.toggle("dark-theme");
-    if (body.classList.contains("dark-theme")) {
-      body.dataset.theme = "dark";
-      themeBtn.textContent = "☀️";
-    } else {
-      body.dataset.theme = "light";
-
-      themeBtn.textContent = "🌙 ";
-    }
+    themeBtn.classList.toggle("dark-theme");
   }
 
   themeBtn.addEventListener("click", toggleTheme);
 });
-*/
 
 //hamburger menu
 const hamburger = document.querySelector(".hamburger");
