@@ -289,37 +289,18 @@ h4 {
   position: relative;
   overflow: hidden;
   text-align: left;
-  animation: title-center 2s ease-out forwards;
-  opacity: 0; /* Initialement caché */
-  transform: translateY(20px); /* Décalage vertical initial */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease, text-align 1s ease-out;
 }
 
-@keyframes title-center {
-  0% {
-    text-align: left;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    text-align: center;
-    opacity: 1;
-    transform: translateY(0);
-  }
+h2.in-view,
+h3.in-view,
+h4.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  text-align: center;
 }
-
-/* Déclencher l'animation lorsque l'élément devient visible */
-.animate-on-scroll h2,
-.animate-on-scroll h3,
-.animate-on-scroll h4 {
-  animation-play-state: paused;
-}
-
-.animate-on-scroll h2.in-view,
-.animate-on-scroll h3.in-view,
-.animate-on-scroll h4.in-view {
-  animation-play-state: running;
-}
-
 @media (max-width: 768px) {
   header img {
     max-width: 90%;
