@@ -101,6 +101,7 @@ nav a {
   margin: 0 10px;
 }
 h1 span {
+  text-transform: uppercase;
   display: block;
   margin-bottom: 20px;
   padding: 40px;
@@ -119,6 +120,7 @@ section {
 }
 
 h1 {
+  text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 10px;
   text-align: center;
@@ -172,6 +174,10 @@ ol li {
   max-width: 100%;
   height: auto;
 }
+#myskill img {
+  max-width: 100%;
+  height: auto;
+}
 
 h1 {
   font-size: 32px;
@@ -215,6 +221,18 @@ footer {
   text-decoration: none;
   color: inherit;
 }
+#contact a {
+  font-size: 32px;
+}
+#contact ul {
+  list-style-type: none;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .p1 h3 {
   margin-top: 40px;
 }
@@ -285,6 +303,7 @@ header img.animate-in {
 h2,
 h3,
 h4 {
+  text-transform: uppercase;
   color: var(--main-color);
   position: relative;
   overflow: hidden;
@@ -467,14 +486,29 @@ h3::after {
     list-style-type: none;
     padding: 0;
   }
+  #contact ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
 
   #contacter ul li {
     margin-right: 20px;
     display: flex;
     align-items: center;
   }
+  #contact ul li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
 
   #contacter ul li:last-child {
+    margin-right: 0;
+  }
+
+  #contact ul li:last-child {
     margin-right: 0;
   }
 
@@ -486,8 +520,19 @@ h3::after {
     white-space: nowrap;
     padding: 5px 10px;
   }
+  #contact ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    padding: 5px 10px;
+  }
 
   #contacter ul li a i {
+    margin-right: 5px;
+  }
+  #contact ul li a i {
     margin-right: 5px;
   }
 }

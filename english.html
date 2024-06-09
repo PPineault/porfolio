@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="porfolio">
+    <meta name="author" content="Patrick Pineault">
+    <link rel="stylesheet" href="./css/style.css" media="screen">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+    <script src="./js/app.js" defer> </script>
+    <title> Patrick Pineault's Portfolio </title>
+    <!--images favorie -->
+    <link rel="icon" href="./images/favicon.ico" type="image/-x-icon">
+</head>
+
+<body data-theme="dark">
+    <header>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about"> About me</a></li>
+                <li> <a href="#projects"> My projects </a> </li>
+                <li> <a href="#myskill"> My Skill </a></li>
+                <li> <a href="#contact"> Contact me </a></li>
+                <li><a href="index.html">Français</a></li>
+
+
+                <!--  mode sombre/clair à jour          -->
+
+                <li>
+                    <button id="theme-btn" class="dark-theme">
+                        <i class="theme-icon"></i>
+
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+        <h1 class="animate-in"> Web Developer <span class="animate-in"> Patrick Pineault </span> </h1>
+        <img class="animate-in" src="./images/profile.png" alt="photo-profil-patrick-pineault">
+
+    </header>
+    <main>
+        <div id="about">
+            <h2>About me</h2>
+            <p>
+                Hello, my name is Patrick Pineault, I am 22 years old. I am passionate about computers and technology. I
+                started developing an interest in this field when I helped my classmates and teachers with various
+                computer-related issues during my high school studies. Later on, I decided to do the Vocational Diploma
+                in computer support to deepen my knowledge and find the path that suits me best in this field.
+            </p>
+            <p>During my studies, the web development course particularly appealed to me. That's why, after my
+                Vocational Diploma, I chose to enroll in the AEC (Attestation of College Studies) in web development to
+                learn more.</p>
+            <p> Today, I am looking for a job in this field. I will therefore present you with an overview of some of my
+                web development projects. </p>
+            <div class="div-ligne"></div>
+        </div>
+        <div id="projets">
+            <h2>My web development projects</h2>
+            <div class="p1">
+                <h3> Website for a fictitious tourist destination: TOWN OF HAIRY CAPYBARAS </h3>
+
+
+
+                <video width="640" height="400" preload="none" style="max-width: 100%" controls="">
+                    <source src="./video/p1.mp4" type="video/mp4">
+                    Your browser does not support the <code>video</code> tag.
+                </video>
+
+
+                <p>
+                    This project is purely front-end and is my first project, which allowed me to learn responsive
+                    design. The project consists of presenting 3 tourist attractions of a place. In my case, the place
+                    is fictional in order to have more freedom in the content.
+
+                    Furthermore, as part of this project, I discovered several JavaScript libraries that I was not
+                    familiar with before.
+                </p>
+                <h4>The technologies used </h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li> CSS library :
+                        <ul>
+                            <li>Font Awesome</li>
+                        </ul>
+                    </li>
+
+                    <li>Javascript</li>
+                    <li>Javascript library :
+                        <ul>
+                            <li>MediaElement.js </li>
+                            <li>jQuery</li>
+                            <li>Cycle2</li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <p class="center"> To consult the website : <a href="https://ppineault.github.io/capy/" target="_blank">
+                        TOWN OF HAIRY CAPYBARAS
+                    </a></p>
+                <p class="center">download the project via github to test it locally: <a
+                        href="https://github.com/PPineault/capy" target="_blank">
+                        <i class="fa-solid fa-download"></i> </a></p>
+                <div class="div-ligne"></div>
+
+            </div>
+            <div class="p2">
+                <h3> Online store project </h3>
+                <video width="640" height="400" preload="none" style="max-width: 100%" controls="">
+                    <source src="./video/p2.mp4" type="video/mp4">
+                    Your browser does not support the<code>video</code> tag.
+                </video>
+                <p>
+                    This website is both front-end and back-end. It is an e-commerce website that integrates the PayPal
+                    API and uses cookies. This project allowed me to learn how to work with the PayPal API and cookie
+                    management in PHP.
+                </p>
+                <h4>The technologies used</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li> CSS library :
+                        <ul>
+                            <li>Font Awesome</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </li>
+
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li>The PayPal API</li>
+                </ul>
+                <p class="center">download the project via github to test it locally: <a
+                        href=" https://github.com/PPineault/paypal-boutique" target="_blank"> <i
+                            class=" fa-solid fa-download"></i> </a>
+                </p>
+                <div class="div-ligne"></div>
+            </div>
+
+            <div class="p3">
+                <h3> restaurant website: Super Burger</h3>
+                <video width="640" height="400" preload="none" style="max-width: 100%">
+                    <source src="./video/p3.mp4" type="video/mp4">
+                    Your browser does not support the<code>video</code> tag.
+                </video>
+
+                <p>
+                    This project is both front-end and back-end. I chose to create this website for this restaurant,
+                    because its presence only on Facebook does not always allow users to easily find the information
+                    they need, such as the menu for example.
+
+                    Although I have not yet obtained the agreement of the restaurant, as it uses a database, I can
+                    modify it to adapt it to another establishment if necessary.
+
+                    Thus, this project serves both as an example and as a model website for a restaurant.
+                </p>
+                <h4>The technologies used</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li> CSS library :
+                        <ul>
+                            <li>Font Awesome</li>
+                        </ul>
+                    </li>
+                    <li>PHP</li>
+                    <li>JSON</li>
+                    <li>SQL Server</li>
+                    <li>Javascript</li>
+                    <li>Javascript library :
+                        <ul>
+                            <li>Leaflet </li>
+                            <li>A fullscreen control for Leaflet</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <p class="center">download the project via github to test it locally: <a
+                        href=" https://github.com/PPineault/superburger" target="_blank"> <i
+                            class="fa-solid fa-download"></i> </a></p>
+                <div class="div-ligne"></div>
+            </div>
+            <div class="p4">
+                <h3> WordPress Plugin - TIC-TAC-TOE</h3>
+                <video width="640" height="400" preload="none" style="max-width: 100%" controls="">
+                    <source src="./video/p4.mp4" type="video/mp4">
+                    Your browser does not support the <code>video</code> tag.
+                </video>
+                <p>
+                    This project is both Front-end and Back-end, with the Back-end being used only for the management of
+                    the WordPress plugin.
+
+                    This project was carried out as a team effort. It allowed me to learn about collaborative work and
+                    to better master Git and GitHub.
+
+                    Furthermore, the advantage of this Tic-Tac-Toe game plugin is that it is compatible with all
+                    WordPress themes.
+                </p>
+                <h4>The technologies used</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li> CSS library :
+                        <ul>
+                            <li>Font Awesome</li>
+                        </ul>
+                    </li>
+                    <li>Javascript</li>
+                    <li>PHP</li>
+                    <li>Wordpress</li>
+                    <li>Mysql database for Wordpress</li>
+
+
+                </ul>
+                <p class="center">download the project via github to test it locally: <a
+                        href="https://github.com/PPineault/tic-tac-toe-plugin-wordpress" target="_blank"> <i
+                            class="fa-solid fa-download"></i> </a></p>
+                <p class="center">lien du github de mon collègue: <a href=" https://github.com/yvodlynpaul"
+                        target="_blank"> Yvodlyn
+                        Paul </a> </p>
+                <div class="div-ligne"></div>
+            </div>
+        </div>
+
+
+
+        <div id="myskill">
+            <h2> My skills</h2>
+            <div class="compdevweb">
+
+                <h3>Web development skills</h3>
+                <br>
+                <div class="language">
+
+                    <img src="./images/logo-competance/html.png" alt="img-html" title="HTML">
+
+                    <img src="./images/logo-competance/css.png" alt="img-css" title="CSS">
+
+                    <img src="./images/logo-competance/javascript.png" alt="img-javacript" title="JavaScript">
+                    <img src="./images/logo-competance/json.png" alt="img-json" title="Json">
+                    <img src="./images/logo-competance/PHP.png" alt="img-php" title="PHP">
+                    <img src="./images/logo-competance/git.png" alt="img-git" title="GIT">
+
+                </div>
+                <div class="div-ligne"></div>
+                <h3>database skills</h3>
+                <br>
+                <div class="bd">
+
+                    <img src="./images/logo-competance/Access.png" alt="img-Acess" title="Access">
+                    <img src="./images/logo-competance/sqlserver.png" alt="img-sql-server" title="Sql server">
+
+                </div>
+
+
+            </div>
+            <div class="div-ligne"></div>
+
+            <div class="compinformatique">
+                <h3>computer skills</h3>
+                <ul>
+                    <li>Knowledge of different computer components</li>
+                    <li>Installation and/or restoration and/or optimization of a workstation (components and software)
+                    </li>
+                    <li>Knowledge of different types of Linux and Windows operating systems</li>
+                    <li>Knowledge of office suites such as LibreOffice, Microsoft Office, Google Office Suite, etc.</li>
+                    <li>Creation of batch files</li>
+                    <li>Writing of procedures</li>
+                    <li>Knowledge of networking</li>
+
+                </ul>
+                <div class="div-ligne"></div>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact me</h2>
+            <ul>
+                <li> Github <a href="https://github.com/PPineault" target="_blank"> <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>Linkedin <a href="https://www.linkedin.com/in/patrick-pineault-87036b234" target="_blank"> <i
+                            class="fa-brands fa-linkedin"></i>
+                    </a> </li>
+                <li> By e-mail <a href="mailto:patrick-pineault@hotmail.com" target="_blank"> <i
+                            class="fa-solid fa-envelope"></i>
+                    </a></li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <p>© All rights reserved Patrick Pineault</p>
+    </footer>
+    <button id="backToTopBtn" title="back to top">
+        <i class="fas fa-arrow-up"></i> </button>
+
+</body>
+
+</html>
