@@ -27,27 +27,23 @@ body {
   --header-color: #555555;
 }
 
-#theme-btn {
-  font-size: 32px;
-}
-
 .theme-icon {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   margin-right: 0.5rem;
 }
 
 .theme-icon::before {
-  content: "\f186"; /* icône lune */
+  content: "\f185"; /* icône soleil */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1.2rem;
 }
 
 .light-theme .theme-icon::before {
-  content: "\f185"; /* icône soleil */
+  content: "\f186"; /* icône lune */
 }
 
 #backToTopBtn {

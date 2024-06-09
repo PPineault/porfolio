@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const body = document.body;
 
   // Initialiser le thème en fonction de l'attribut data-theme
-  body.classList.add(body.dataset.theme + "-theme");
+  body.classList.add("dark-theme");
+  body.dataset.theme = "dark";
 
   function toggleTheme() {
     body.classList.toggle("light-theme");
