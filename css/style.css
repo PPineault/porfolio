@@ -187,7 +187,9 @@ footer {
   text-decoration: none;
   color: inherit;
 }
-
+.p1 h3 {
+  margin-top: 40px;
+}
 @media (max-width: 768px) {
   header img {
     max-width: 90%;
