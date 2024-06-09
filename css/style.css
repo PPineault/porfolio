@@ -301,6 +301,7 @@ h4.in-view {
   transform: translateY(0);
   text-align: center;
 }
+
 @media (max-width: 768px) {
   header img {
     max-width: 90%;
