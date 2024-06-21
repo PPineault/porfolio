@@ -323,13 +323,15 @@ h4.in-view {
 .p1 p,
 .p2 p,
 .p3 p,
-.p4 p {
+.p4 p,
+.p p {
   margin-top: 30px;
 }
 .p1 h3,
 .p2 h3,
 .p3 h3,
-.p4 h3 {
+.p4 h3,
+.p h3 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
